@@ -18,7 +18,7 @@ const STUDENTS_DATA = [
  * @param {age} newAge  - the student new age
  */
 function updateStudentAge(firstName, lastName, newAge) {
-  let student = STUDENTS_DATA.find((s) => s.firstName === firstName && s.lastName === lastName);
+  let student = STUDENTS_DATA.find(s => s.firstName === firstName && s.lastName === lastName);
   if (student) {
     student.age = newAge;
   }
